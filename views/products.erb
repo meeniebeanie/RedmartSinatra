@@ -1,0 +1,29 @@
+<!-- <ol>
+  <% @products.each do |product| %>
+  <li>
+    <%= product.name%> <%= product.price%>
+  </li>
+  <% end %>
+</ol>
+ -->
+
+<h3>Fruits for you?</h3>
+
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+    <tr>
+      <td><%= product.id%> </td>
+      <td><%= product.name%> </td>
+      <td>$<%= product.price%> </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

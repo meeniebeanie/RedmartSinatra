@@ -3,6 +3,10 @@ class RedmartSinatra < Sinatra::Base
     "Hello World"
   end
 
+  get '/about' do
+    "This is an about page"
+  end
+
   get '/products' do
     @products = Product.all
     #['Harry Potter', 'Hunger Games', 'Lord of the Rings']

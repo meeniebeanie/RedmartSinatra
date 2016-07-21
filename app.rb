@@ -1,10 +1,10 @@
 class RedmartSinatra < Sinatra::Base
   get '/' do
-    "Hello World"
+    erb "<h3>Hello World</h3>"
   end
 
   get '/about' do
-    "This is an about page"
+    erb "This is an about page"
   end
 
   get '/products' do
@@ -18,4 +18,10 @@ class RedmartSinatra < Sinatra::Base
     #['Harry Potter', 'Hunger Games', 'Lord of the Rings']
     erb :'users'
   end
+
+    get '/products/:id' do
+    @product = Product.find(params[:id])
+    erb :'each_product'
+  end
+
 end

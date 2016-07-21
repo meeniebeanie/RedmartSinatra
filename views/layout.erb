@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Redmart Sinatra</title>
-    <link rel="stylesheet" type="text/css" href="skeleton.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="/style/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/normalize.css" /> -->
+    <!-- request.base_url: checks where the server is running right now-->
+    <!-- url('urlname'): sinatra helper- methods that are accessible everywhere  -->
   </head>
   <body>
     <h1>Redmart Sinatra</h1>
